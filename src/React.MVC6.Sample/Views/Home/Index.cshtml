@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Hello World</h1>
+
+@Html.React("Components.HelloMessage", new { name = "Sam" })
+
+<script src="https://fb.me/react-0.14.0.min.js"></script>
+<script src="https://fb.me/react-dom-0.14.0.min.js"></script>
+<script src="@Url.Content("/build/client.bundle.js")"></script>
+
+@Html.ReactInitJavaScript()

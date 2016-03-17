@@ -1,4 +1,4 @@
-﻿/// <reference path="../typings/react/react.d.ts" />
+﻿/// <reference path="../../../typings/main/ambient/react/index.d.ts" />
 import React = require('react');
 
 // A '.tsx' file enables JSX support in the TypeScript compiler, 
@@ -16,5 +16,3 @@ class HelloMessage extends React.Component<HelloWorldProps, {}> {
 }
 
 export = HelloMessage;
-
-//ReactDOM.render(<HelloMessage name="Sampsa" />, document.getElementById('content'));
